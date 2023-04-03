@@ -4,8 +4,6 @@
 [![PHP-5.6 ](https://github.com/bluelibraries/php5-dns/actions/workflows/build-5.6.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/build-5.6.yml) 
 [![PHP-7.1 ](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.1.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.1.yml)
 [![PHP-7.3 ](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.3.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.3.yml)
-[![PHPUnit](https://github.com/bluelibraries/php5-dns/actions/workflows/phpunit.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/phpunit.yml)
-[![codecov](https://codecov.io/gh/bluelibraries/php5-dns/branch/main/graph/badge.svg?token=CQBMZ4EDED)](https://codecov.io/gh/bluelibraries/php5-dns)
 
 ## FOR PHP  >= 5.5 AND < 7.4 ONLY
 
