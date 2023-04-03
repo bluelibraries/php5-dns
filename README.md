@@ -1,15 +1,15 @@
 # DNS
 
-[![PHP-5.5 ](https://github.com/bluelibraries/dns/actions/workflows/build-5.5.yml/badge.svg)](https://github.com/bluelibraries/dns/actions/workflows/build-5.5.yml) 
-[![PHP-5.6 ](https://github.com/bluelibraries/dns/actions/workflows/build-5.6.yml/badge.svg)](https://github.com/bluelibraries/dns/actions/workflows/build-5.6.yml) 
-[![PHP-7.1 ](https://github.com/bluelibraries/dns/actions/workflows/build-7.1.yml/badge.svg)](https://github.com/bluelibraries/dns/actions/workflows/build-7.1.yml)
-[![PHP-7.3 ](https://github.com/bluelibraries/dns/actions/workflows/build-7.3.yml/badge.svg)](https://github.com/bluelibraries/dns/actions/workflows/build-7.3.yml)
-[![PHPUnit](https://github.com/bluelibraries/dns/actions/workflows/phpunit.yml/badge.svg)](https://github.com/bluelibraries/dns/actions/workflows/phpunit.yml)
+[![PHP-5.5 ](https://github.com/bluelibraries/php5-dns/actions/workflows/build-5.5.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/build-5.5.yml) 
+[![PHP-5.6 ](https://github.com/bluelibraries/php5-dns/actions/workflows/build-5.6.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/build-5.6.yml) 
+[![PHP-7.1 ](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.1.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.1.yml)
+[![PHP-7.3 ](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.3.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/build-7.3.yml)
+[![PHPUnit](https://github.com/bluelibraries/php5-dns/actions/workflows/phpunit.yml/badge.svg)](https://github.com/bluelibraries/php5-dns/actions/workflows/phpunit.yml)
 [![codecov](https://codecov.io/gh/bluelibraries/php5-dns/branch/main/graph/badge.svg?token=CQBMZ4EDED)](https://codecov.io/gh/bluelibraries/php5-dns)
 
-## FOR PHP  < 7.4 ONLY
+## FOR PHP  >= 5.5 AND < 7.4 ONLY
 
-For newer versions we strongly suggest **[bluelibraries/dns](https://github.com/bluelibraries/dns)**
+**For newer PHP version** we strongly suggest **[bluelibraries/dns](https://github.com/bluelibraries/dns)**
 
 ## Use certain DNS handler for DNS interrogation
  
