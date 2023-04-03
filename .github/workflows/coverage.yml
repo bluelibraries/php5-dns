@@ -2,9 +2,9 @@ name: Coverage
 
 on:
   push:
-    branches: [ "test" ]
+    branches: [ "main", "dev" ]
   pull_request:
-    branches: [ "test" ]
+    branches: [ "test", "dev" ]
 
 permissions:
   contents: read
