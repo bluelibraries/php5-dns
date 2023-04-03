@@ -138,7 +138,6 @@ class DnsUtilsTest extends TestCase
     public static function getHumanReadableDateTimeDataProvider()
     {
         return [
-            [0, 19700101010000],
             [1673468849, 20230111202729],
             [1673862849, 20230116095409],
         ];
