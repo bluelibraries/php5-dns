@@ -7,7 +7,7 @@
 
 ## FOR PHP  >= 5.5 AND < 7.4 ONLY
 
-**For newer PHP version** we strongly suggest **[bluelibraries/dns](https://github.com/bluelibraries/dns)**
+## **For newer PHP version** we strongly suggest **[bluelibraries/dns](https://github.com/bluelibraries/dns)**
 
 ## Use certain DNS handler for DNS interrogation
  

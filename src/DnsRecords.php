@@ -12,14 +12,14 @@ use BlueLibraries\PHP5\Dns\Records\RecordInterface;
 
 class DnsRecords
 {
-    /** 
-  @var DnsHandlerInterface $handler; 
-**/ 
- private $handler;
-    /** 
-  @var RecordFactory $factory; 
-**/ 
- private $factory;
+    /**
+     * @var DnsHandlerInterface $handler ;
+     **/
+    private $handler;
+    /**
+     * @var RecordFactory $factory ;
+     **/
+    private $factory;
 
     /**
      * @param DnsHandlerInterface|null $handler
@@ -93,8 +93,15 @@ class DnsRecords
 
         $result = [];
 
+        if (!is_array($type)) {
+            return [];
+        }
+
         foreach ($type as $typeId) {
-            $result = array_merge($result, $this->getRecordDataForType($host, $typeId, $useExtendedRecords, $keepOrder));
+            $result =
+                is_int($typeId)
+                    ? array_merge($result, $this->getRecordDataForType($host, $typeId, $useExtendedRecords, $keepOrder))
+                    : $result;
         }
 
         if ($removeDuplicates) {
