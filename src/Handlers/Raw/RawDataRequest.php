@@ -246,8 +246,8 @@ class RawDataRequest
 
     protected function getBinaryId()
     {
-        $this->id = isset($this->id) ? $this->id : rand(0, 65535);
-        return pack('n', $this->id);
+        $this->id = isset($this->id) ? (int)$this->id : rand(0, 65535);
+        return (string)pack('n', $this->id);
     }
 
     /**
@@ -257,7 +257,7 @@ class RawDataRequest
     {
         $flags = 0x0100 & 0x0300; // recursion & query spec mask
         $opcode = 0x0000;
-        return pack('n', $opcode | $flags);
+        return (string)pack('n', $opcode | $flags);
     }
 
     /**
@@ -265,7 +265,7 @@ class RawDataRequest
      */
     protected function getBinaryAuthoritativeAnswer()
     {
-        return pack('n', (int)$this->useAuthoritativeAnswer);
+        return (string)pack('n', (int)$this->useAuthoritativeAnswer);
     }
 
     /**
@@ -273,7 +273,7 @@ class RawDataRequest
      */
     protected function getBinaryUseTruncation()
     {
-        return pack('n', (int)$this->useTruncation);
+        return (string)pack('n', (int)$this->useTruncation);
     }
 
     /**
@@ -281,7 +281,7 @@ class RawDataRequest
      */
     protected function getBinaryRecursionDesired()
     {
-        return pack('n', (int)$this->isRecursionDesired);
+        return (string)pack('n', (int)$this->isRecursionDesired);
     }
 
     /**
@@ -289,7 +289,7 @@ class RawDataRequest
      */
     protected function getBinaryRecursionAvailable()
     {
-        return pack('n', (int)$this->useRecursionIfAvailable);
+        return (string)pack('n', (int)$this->useRecursionIfAvailable);
     }
 
     /**
@@ -308,7 +308,7 @@ class RawDataRequest
                 array_map(function ($item) {
                     return pack("C", strlen($item)) . $item;
                 }, $labels)
-            ) . pack('C', 0);
+            ) . (string)pack('C', 0);
     }
 
     /**
@@ -316,7 +316,7 @@ class RawDataRequest
      */
     protected function getBinaryType()
     {
-        return pack('n', $this->typeId);
+        return (string)pack('n', $this->typeId);
     }
 
     /**
@@ -332,7 +332,7 @@ class RawDataRequest
             );
         }
 
-        return pack('n', $this->classId);
+        return (string)pack('n', $this->classId);
     }
 
     /**
@@ -340,7 +340,7 @@ class RawDataRequest
      */
     protected function getTtl()
     {
-        return pack('N', $this->timeout);
+        return (string)pack('N', $this->timeout);
     }
 
     /**
@@ -349,7 +349,7 @@ class RawDataRequest
      */
     public function getBinaryHeaderLength($headerLength)
     {
-        return pack("n", $headerLength);
+        return (string)pack("n", $headerLength);
     }
 
     /**

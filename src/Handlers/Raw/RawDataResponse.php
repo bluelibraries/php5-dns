@@ -113,7 +113,7 @@ class RawDataResponse
      */
     private function getHeaderAnswersCount()
     {
-        return isset($this->headerData['ancount']) ? $this->headerData['ancount'] : 0;
+        return isset($this->headerData['ancount']) ? (int)$this->headerData['ancount'] : 0;
     }
 
     /**
@@ -121,7 +121,7 @@ class RawDataResponse
      */
     private function getHeaderQuestionsCount()
     {
-        return isset($this->headerData['qdcount']) ? $this->headerData['qdcount'] : null;
+        return isset($this->headerData['qdcount']) ? (int)$this->headerData['qdcount'] : null;
     }
 
     /**
