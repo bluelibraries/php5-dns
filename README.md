@@ -48,7 +48,7 @@ Array
 
 ## Install via `composer`
 ```text
-composer require bluelibraries/dns
+composer require bluelibraries/php5-dns
 ```
 
 
